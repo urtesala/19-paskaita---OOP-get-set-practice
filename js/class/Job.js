@@ -9,4 +9,16 @@ class Job {
     this.#price = argPrice;
     this.#done = false;
   }
+
+  get price() {
+    return this.#price;
+  }
+
+  get isDone() {
+    return this.#done;
+  }
+
+  completeJob() {
+    this.#done = true;
+  }
 }

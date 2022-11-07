@@ -12,9 +12,10 @@ class Employee extends WorkingPerson {
   }
 
   calcPay() {
-    // skirtas atvaizduoti dabartini atlyginima
+    // skirtas atvaizduoti dabartini atlyginima ir nunuliti valadas
     const pay = this.hoursWorked * this.hourlyPay;
-    console.log(`${this.firsName} salary is ${pay}`);
+    // console.log(`${this.firsName} salary is ${pay}`);
+    this.hoursWorked = 0;
     return pay;
   }
 }
