@@ -9,9 +9,8 @@ class WorkingPerson {
     return emailString;
   }
 
-  get fullName() {
-    const fullNameString = `${this.firsName} ${this.lastName}`;
-    return fullNameString;
+  get fullname() {
+    return `${this.firsName} ${this.lastName}`;
   }
 
   calcPay() {}

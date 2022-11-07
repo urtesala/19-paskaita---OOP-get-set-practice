@@ -1,5 +1,6 @@
 class Job {
-  #id;
+  static jobCount = 0;
+  // #id;
   #done;
   #title;
   #price;
@@ -8,6 +9,7 @@ class Job {
     this.#title = argTitle;
     this.#price = argPrice;
     this.#done = false;
+    this.#id = `j_${++Job.jobCount}`;
   }
 
   get price() {

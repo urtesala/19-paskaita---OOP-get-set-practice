@@ -1,6 +1,7 @@
 "use strict";
 console.log("main.js");
-const ulEl1 = document.getElementById("ul1");
+const ulEl = document.getElementById("ul");
+const outEl = document.getElementById("out");
 
 // const w1 = new WorkingPerson('Jane', 'Doe');
 // console.log('w1.email ===', w1.email);
@@ -14,8 +15,10 @@ const workersArr = [
   new Freelancer("Lenteja", "Ceses"), // 4
 ];
 
+GenHtml.generatePeople(workersArr, outEl);
+
 // sukuriam darba
-const workArr = [
+const jobArr = [
   new Job("Footer Layout", 200), // 0
   new Job("Header Layout", 300), // 1
   new Job("Mobile Layout", 700), // 2
@@ -23,10 +26,12 @@ const workArr = [
   new Job("Navigation mobile", 200), // 4
 ];
 
-const workList = new WorkersList();
-// workList.addWorker({ name: 'Mike', surname: 'Till' });
-workList.addWorkerList(workersArr);
-console.log("workList.list ===", workList.list);
+// const workList = new WorkersList();
+// // workList.addWorker({ name: 'Mike', surname: 'Till' });
+// workList.addWorkerList(workersArr);
+// console.log('workList.list ===', workList.list);
+
+console.log("jobArr ===", jobArr);
 {
   // priskirti freelanceriam darbus
   // workersArr[3].addProject(workArr[0]);
